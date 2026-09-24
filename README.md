@@ -1,3 +1,20 @@
+## Projeto acadêmico - Universidade do Sagrado Coração(USC) - Processamento de imagem 
+
+## Integrantes:
+Pedro Daniel Malinosqui Silva
+
+Lucas Braz fontinele Ponce
+
+Francine Reimi Honda
+
+João Fernando de Oliveira Cinha Ceschim
+
+João Vitor Silva Mondelli
+
+Matheus Kennerly de Aguiar
+  
+---
+
 # Pipeline — Pré-processamento de Imagens
 
 ## 1. Visão geral
@@ -72,6 +89,8 @@ Para isso, a imagem é redimensionada proporcionalmente e depois posicionada no 
 | python-dotenv | Leitura das configurações do arquivo `.env`         |
 | os            | Acesso às variáveis de ambiente                     |
 | KaggleHub     | Download do dataset                                 |
+| rembg         | Ia, que tornar a imagem em PNG                      |
+| onnxruntime   | Motor de treinamento acelerado da Ia                |
 
 > `os` faz parte da biblioteca padrão do Python e, portanto, não precisa ser instalado separadamente.
 
@@ -262,8 +281,18 @@ O resultado será aproximadamente:
 As áreas que não são ocupadas pela imagem permanecem transparentes.
 
 ---
+## 4.7 Rembg
+Ao mesmo tempo que a imagem está sendo gerada uma Ia, está trabalhando na separação do fundo.
 
-## 4.7 Salvamento
+Identificar o objeto principal (primeiro plano), como pessoas, animais ou produtos.
+
+Separar esse objeto de forma precisa do resto do cenário.
+
+Gerar um arquivo de saída (geralmente em formato .png) com o fundo totalmente transparente
+
+---
+
+## 4.8 Salvamento
 
 Após o processamento, a imagem final é salva no formato:
 
@@ -511,5 +540,15 @@ Salvamento em PNG
     ↓
 Imagem processada
 ```
+---
+
+## extras conteúdo que será adicionado 
+O projeto ainda não está finalizado, ele ainda será integrado com uma Ia desenvolvida pelos mesmo integrantes.
+
+Fazendo parte de outra matéria uma ira complementar a outra.
+
+Sendo a ideia do projeto final, onde a Ia ira aprender sobre frutas, e se tornar capaz de identificá-las e classifica-las de forma correta.
+
+---
 
 **Fim da pipeline.**
