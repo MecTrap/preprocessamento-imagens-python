@@ -21,6 +21,8 @@ Matheus Kennerly de Aguiar
 
 Este documento apresenta a pipeline didática utilizada no projeto de **pré-processamento de imagens do dataset Fruits-262**.
 
+https://www.kaggle.com/datasets/aelchimminut/fruits262/data
+
 A pipeline representa as principais etapas executadas pelo projeto, desde a obtenção do dataset até a geração das imagens processadas.
 
 O fluxo principal é:
